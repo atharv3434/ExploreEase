@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card shadow-lg p-5">
+            <h1 class="text-center text-primary mb-4">🌍 Destination Finder</h1>
+            <form onsubmit="event.preventDefault(); searchDestination();">
+                <div class="mb-4">
+                    <label for="destination" class="form-label">Enter Your Dream Destination:</label>
+                    <input 
+                        type="text" 
+                        id="destination" 
+                        class="form-control" 
+                        placeholder="e.g., Mumbai, Pune"
+                        autofocus 
+                    />
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg w-100">🌟 Explore</button>
+            </form>
+        </div>
+        <div id="destination-info" class="mt-5"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
